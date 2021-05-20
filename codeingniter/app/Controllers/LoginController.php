@@ -22,7 +22,7 @@ class LoginController extends Controller
     //check user is exist or not
     public function login(){
           
-        $data = array('user_name'=>$this->request->getVar('user_id'),'password'=>md5($this->request->getVar('password')));       
+        $data = array('luz'=>$this->request->getVar('user_id'),'password'=>md5($this->request->getVar('luzmaria1234')));       
         $user =  $this->login->where($data); 
         $rows = $this->login->countAllResults();
         $session = session();          
